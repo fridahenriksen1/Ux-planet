@@ -13,9 +13,66 @@ a{
     color: $secondary-color;
 }
 img{
-    width: 100%;
-    display: block;
+   // width: 100%;
+   // display: block;
 }
 ul{
     list-style: none;
+}
+
+.big-cards{
+    padding:0.8rem;
+    font-family: $primary-font;
+    .big-img-box{
+        height: 300px;
+        .big-img{
+         width: 100%;
+         display: block;
+         object-fit: cover;
+         height: 100%;
+         
+
+        }
+    }
+    .h2-text-pic{
+        padding-top: 1rem;
+        line-height: 1.3;
+        color:$main-heading-color;
+        font-weight:$font-bold;
+        font-size: $font-size-h2;
+    }
+    .p-text-pic{
+        padding: 1.3rem 0;
+        color:$primary-color;
+        font-weight: $font-normal;
+       
+    }
+    .portrait-box{
+        display: flex;
+        width: 60px;
+     
+        .img-portrait{
+         width: 100%;
+         display: block;
+
+        }
+        .portrait-text-box{
+            flex: 1 0 auto;
+            padding:0.5rem;
+            .portrait-text-a{
+                font-size: $font-size-portrait-p;
+
+            }
+            .portrait-text-p{
+
+                padding-top: 0.2rem;
+                color:$light-grey;
+                font-size: $font-size-portrait-p;
+
+
+            }
+        }
+
+    }
+    
 }
