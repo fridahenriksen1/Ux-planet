@@ -84,48 +84,73 @@ ul {
   font-size: 14px;
 }
 
-.big-cards {
+.main-container {
+  max-width: 1300px;
+  margin: auto;
+}
+.main-container .h1-main {
+  padding: 2rem 0;
+  border-bottom: solid 1px #EFEFEF;
+  margin: 0 0.8rem 1rem 0.8rem;
+  color: #414141;
+}
+@media (min-width: 768px) {
+  .main-container .wrapper {
+    display: flex;
+  }
+}
+.main-container .wrapper .big-cards {
   padding: 0.8rem;
   font-family: "Noto Sans", sans-serif;
 }
-.big-cards .big-img-box {
+@media (min-width: 768px) {
+  .main-container .wrapper .big-cards {
+    flex: 0 0 50%;
+  }
+}
+.main-container .wrapper .big-cards .big-img-box {
   height: 300px;
 }
-.big-cards .big-img-box .big-img {
+@media (min-width: 768px) {
+  .main-container .wrapper .big-cards .big-img-box {
+    height: 200px;
+  }
+}
+.main-container .wrapper .big-cards .big-img-box .big-img {
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
 }
-.big-cards .h2-text-pic {
+.main-container .wrapper .big-cards .h2-text-pic {
   padding-top: 1rem;
   line-height: 1.3;
   color: #2E2E2E;
   font-weight: 700;
   font-size: 1.375rem;
 }
-.big-cards .p-text-pic {
+.main-container .wrapper .big-cards .p-text-pic {
   padding: 1.3rem 0;
   color: #191919;
   font-weight: 400;
 }
-.big-cards .portrait-box {
+.main-container .wrapper .big-cards .portrait-box {
   display: flex;
   width: 60px;
 }
-.big-cards .portrait-box .img-portrait {
+.main-container .wrapper .big-cards .portrait-box .img-portrait {
   width: 100%;
   display: block;
 }
-.big-cards .portrait-box .portrait-text-box {
+.main-container .wrapper .big-cards .portrait-box .portrait-text-box {
   flex: 1 0 auto;
   padding: 0.5rem;
 }
-.big-cards .portrait-box .portrait-text-box .portrait-text-a {
+.main-container .wrapper .big-cards .portrait-box .portrait-text-box .portrait-text-a {
   font-size: 0.875rem;
 }
-.big-cards .portrait-box .portrait-text-box .portrait-text-p {
+.main-container .wrapper .big-cards .portrait-box .portrait-text-box .portrait-text-p {
   padding-top: 0.2rem;
   color: #6C6C6C;
   font-size: 0.875rem;
