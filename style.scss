@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Noto Sans';
+
+}
 p{
     color: $primary-color;
     line-height: 1.2;
@@ -18,6 +22,67 @@ img{
 }
 ul{
     list-style: none;
+    display: flex;
+}
+.main-nav{
+    background-color: #ffffff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+   
+    .navbar1{
+        border-bottom:solid 1px #EFEFEF;
+        .ul_klass1{
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width:1400px){
+                padding: 1rem 5rem 1rem 5rem;
+            } 
+            .li_klass{
+                .box{
+                    height: 34px;
+                    width: 34px;
+                    background-color: #000000;
+                }
+                .sign_in{
+                    margin-left: 6rem;
+                    @media (min-width:1400px){
+                        margin-left: 60rem;
+                    } 
+                }
+                .get_started{
+                    border:solid 1px $secondary-color;
+                    border-radius: 5px;
+                    padding: 11px 18px 11px 18px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .navbar2{
+        overflow-x: scroll;
+        display: flex;
+        
+        .ul_klass2{
+            padding: 1rem;
+            align-items: center;
+            flex:1 0 auto;
+            @media (min-width:1400px){
+                padding: 1rem 5rem 1rem 5rem;
+            } 
+            .ux_planet{
+                color: #414141;
+                font-size: 20px;
+                font-weight: 700;
+                
+            }
+            .a_tagg{
+                margin: 0 0 0 2rem;
+                color:  #6C6C6C;
+                font-size: 14px;
+            }
+
+        }
+    }
 }
 
 .big-cards{
